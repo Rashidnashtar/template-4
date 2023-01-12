@@ -1,0 +1,24 @@
+.section-heading {
+  position: relative;
+  margin: 30px 15px;
+}
+.section-heading::after {
+  content: "";
+  position: absolute;
+  width: 7%;
+  height: 3px;
+  left: 0;
+  top: 30px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 23%,
+    rgba(255, 255, 255, 1) 25%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+@media screen and (max-width: 768px) {
+  .section-heading {
+    font-size: 1.2rem;
+  }
+}
