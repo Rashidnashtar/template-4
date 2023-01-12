@@ -5,12 +5,7 @@ const QuickDraft = () => {
       <p>Write A Draft For Your Ideas</p>
       <form action="">
         <input type="text" placeholder="title" />
-        <textarea
-          cols="32"
-          rows="10"
-          placeholder="Your Thought"
-          resize="none"
-        />
+        <textarea placeholder="Your Thought" />
         <button className="btn">Save</button>
       </form>
     </div>
