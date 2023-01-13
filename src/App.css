@@ -1,6 +1,21 @@
 .App {
   width: 100%;
+}
+.site-container {
   display: flex;
+}
+.fake-nav {
+  width: 15%;
+}
+@media screen and (max-width: 992px) {
+  .fake-nav {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .fake-nav {
+    width: 8%;
+  }
 }
 .content-container {
   display: flex;

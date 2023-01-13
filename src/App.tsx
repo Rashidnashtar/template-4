@@ -6,9 +6,12 @@ function App() {
   return (
     <div className="App ">
       <Navbar />
-      <div className="content-container">
-        <Heading />
-        <Dashboard />
+      <div className="site-container">
+        <div className="fake-nav"></div>
+        <div className="content-container">
+          <Heading />
+          <Dashboard />
+        </div>
       </div>
     </div>
   );
