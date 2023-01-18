@@ -357,7 +357,11 @@
   font-size: 0.9em;
   padding-left: 5px;
 }
-
+.widget-control input,
+.widget-control label {
+  cursor: pointer;
+  user-select: unset;
+}
 .widget-control .chose input {
   width: 15px;
 }
