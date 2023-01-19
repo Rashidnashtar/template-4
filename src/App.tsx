@@ -4,6 +4,7 @@ import Navbar from "./components/navbar";
 import Heading from "./components/heading";
 import Settings from "./components/settings";
 import { Routes, Route } from "react-router-dom";
+import Profile from "./components/profile";
 function App() {
   return (
     <div className="App ">
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
         </div>
       </div>
