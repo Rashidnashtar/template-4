@@ -416,6 +416,11 @@
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
+@media (max-width: 380px) {
+  .backup-manager .back label {
+    font-size: 13px;
+  }
+}
 .backup-manager .back label.active {
   color: #0075ff;
   border: 1px solid #0075ff;
