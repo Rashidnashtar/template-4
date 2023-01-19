@@ -175,6 +175,8 @@
   }
   .main-profile-widget .details .detail-item .info p {
     width: 30%;
+    display: flex;
+    flex-direction: column;
   }
 }
 
