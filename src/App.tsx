@@ -5,6 +5,7 @@ import Heading from "./components/heading";
 import Settings from "./components/settings";
 import { Routes, Route } from "react-router-dom";
 import Profile from "./components/profile";
+import Projects from "./components/projects";
 function App() {
   return (
     <div className="App ">
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
         </div>
       </div>
