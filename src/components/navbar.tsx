@@ -75,6 +75,7 @@ const Navbar: React.FC = () => {
         <li
           onClick={() => {
             setIsActivearr(4);
+            navigate("/courses");
           }}
           className={`nav-item ${isActiveArr == 4 ? "active" : ""}`}
         >
