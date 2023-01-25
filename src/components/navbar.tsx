@@ -84,6 +84,7 @@ const Navbar: React.FC = () => {
         <li
           onClick={() => {
             setIsActivearr(5);
+            navigate("/Friends");
           }}
           className={`nav-item ${isActiveArr == 5 ? "active" : ""}`}
         >

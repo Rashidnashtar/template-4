@@ -1,0 +1,132 @@
+.friends {
+  flex: 1;
+  background-color: #f1f5f9;
+}
+.friends-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+  margin: 15px;
+}
+
+/* friend /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.friend {
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  position: relative;
+  gap: 10px;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.friend .hero {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px 10px;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.friend .hero img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-bottom: 10px;
+}
+.friend .hero h4 {
+  font-size: 0.9em;
+  gap: 8px;
+}
+.friend .hero p {
+  font-size: 0.7em;
+  color: #888;
+  margin-top: 5px;
+}
+.friend .floating-icons {
+  display: flex;
+  gap: 2px;
+  font-size: 0.8em;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.friend .floating-icons .phone,
+.friend .floating-icons .mail {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #eee;
+  font-size: 0.9em;
+  color: #888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.friend .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.8em;
+  position: relative;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.friend .info .vip {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  font-size: 2.4em;
+  font-weight: bold;
+  color: #fef3e2;
+}
+.friend .actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.friend .actions p {
+  font-size: 0.7em;
+  color: #888;
+}
+.friend .actions .btns {
+  display: flex;
+  gap: 5px;
+}
+.friend .actions .btns button {
+  padding: 4px 8px;
+  font-size: 0.6em;
+  border: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: white;
+}
+.friend .actions .pro {
+  background-color: #0075ff;
+}
+.friend .actions .remove {
+  background-color: red;
+}
+/* End Friend /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
