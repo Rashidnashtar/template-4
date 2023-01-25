@@ -21,12 +21,19 @@ const Navbar: React.FC = () => {
     "/courses": 4,
     "/friends": 5,
     "/files": 6,
-    "/plans": 7,
   };
+  type keys =
+    | "/"
+    | "/settings"
+    | "/profile"
+    | "/projects"
+    | "/courses"
+    | "/friends"
+    | "/files";
+
   const navigate = useNavigate();
   const [isActiveArr, setIsActivearr] = useState(
-    //@ts-ignore
-    locationMap[location.pathname]
+    locationMap[location.pathname as keys]
   );
   console.log(location.pathname);
 
@@ -79,7 +86,9 @@ const Navbar: React.FC = () => {
           }}
           className={`nav-item ${isActiveArr == 4 ? "active" : ""}`}
         >
+          {/* <Link to=""> */}
           <img src={courImg} alt="courses-icon" /> <span>Courses</span>
+          {/* </Link> */}
         </li>
         <li
           onClick={() => {
@@ -98,14 +107,6 @@ const Navbar: React.FC = () => {
           className={`nav-item ${isActiveArr == 6 ? "active" : ""}`}
         >
           <img src={filImg} alt="files-icon" /> <span>Files</span>
-        </li>
-        <li
-          onClick={() => {
-            setIsActivearr(7);
-          }}
-          className={`nav-item ${isActiveArr == 7 ? "active" : ""}`}
-        >
-          <img src={plaImg} alt="plans-icon" /> <span>Plans</span>
         </li>
       </ul>
     </div>
