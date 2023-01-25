@@ -18,8 +18,8 @@ const Course: React.FC<props> = ({
 }) => {
   return (
     <div className="course">
-      <div className="main-img">
-        <img src={backImg} alt="course" />
+      <div className="main-img" style={{ backgroundImage: `url(${backImg})` }}>
+        {/* <img src={backImg} alt="course" /> */}
       </div>
       <div className="content">
         <h4>{title}</h4>
