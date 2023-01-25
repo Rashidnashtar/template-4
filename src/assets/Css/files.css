@@ -1,0 +1,170 @@
+.files {
+  flex: 1;
+  background-color: #f1f5f9;
+}
+.files-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  margin: 15px;
+  flex: 1;
+}
+.main-container {
+  display: flex;
+  gap: 5px;
+  margin: 15px;
+  background-color: #f1f5f9;
+}
+@media screen and (max-width: 996px) {
+  .main-container {
+    flex-direction: column;
+  }
+}
+/* file widget /////////////////////////////////////////////////////////////////////////////////////*/
+.file-widget {
+  display: flex;
+  flex-direction: column;
+  min-height: 180px;
+  position: relative;
+  gap: 10px;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.file-widget .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.file-widget .hero .floating-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+  color: #888;
+}
+.file-widget .hero img {
+  width: 50px;
+}
+.file-widget .hero h4 {
+  font-size: 0.9em;
+  font-weight: normal;
+}
+.file-widget .hero p {
+  padding-top: 10px;
+  font-size: 0.7em;
+  color: #888;
+  align-self: flex-start;
+}
+.file-widget .footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7em;
+  color: #888;
+}
+/* End file widget /////////////////////////////////////////////////////////////////////////////////////*/
+
+/* file statistics /////////////////////////////////////////////////////////////////////////////////////*/
+.file-stats {
+  display: flex;
+  flex-direction: column;
+  max-height: 290px;
+  min-width: 200px;
+  position: relative;
+  gap: 10px;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+@media screen and (max-width: 996px) {
+  .file-stats {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+.file-stats h4 {
+  font-size: 1.2em;
+}
+.file-stats .stat {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 4px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.file-stats .stat .icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+}
+.file-stats .pdf .icon {
+  background-color: #cce3ff;
+  color: #1980ff;
+}
+.file-stats .img .icon {
+  background-color: #d3f3df;
+  color: #53d182;
+}
+.file-stats .word .icon {
+  background-color: #fdd9d7;
+  color: red;
+}
+.file-stats .csv .icon {
+  background-color: #fdecce;
+  color: #f59e0b;
+}
+.file-stats .stat .content {
+  margin-left: 5px;
+}
+.file-stats .stat .content h5 {
+  font-size: 0.8em;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+.file-stats .stat .content p {
+  font-size: 0.7em;
+  color: #888;
+}
+.file-stats .stat > p {
+  margin-left: auto;
+  font-size: 0.8em;
+  color: #888;
+}
+.file-stats button {
+  width: 40%;
+  margin: auto;
+  border: 0;
+  background-color: #1980ff;
+  padding: 5px 8px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 0.7em;
+}
+/* End file statistics /////////////////////////////////////////////////////////////////////////////////////*/

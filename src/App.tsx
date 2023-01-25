@@ -8,6 +8,7 @@ import Profile from "./components/profile";
 import Projects from "./components/projects";
 import Courses from "./components/courses";
 import Friends from "./components/friends";
+import Files from "./components/files";
 function App() {
   return (
     <div className="App ">
@@ -23,6 +24,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/Courses" element={<Courses />} />
             <Route path="/Friends" element={<Friends />} />
+            <Route path="/Files" element={<Files />} />
           </Routes>
         </div>
       </div>
